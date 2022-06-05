@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://bn1303files.storage.live.com/y4mKf4Dl2UBV-7yxPOvDH6xYgBt5S5s75GcS9XE2xIzqYDLE4h1H7qaLq-UpI1BKcX6EvWV57rBCwQIGj1_YkZQR_xJqDJ7_1mldpNxo4IAw4kK3T6KLRO3BhwvoMXTVcv5CnhlB_4SsZgRAKiknJZJH4NeOU-RhdjEhUG6KYDo-0DrR4eb34NWReZ_jPaT9o6O?width=1642&height=1642&cropmode=none"
+        type="image/icon type" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>View Doctor</title>
+</head>
+
+<!--Start CSS Style-->
+<style>
+    .banner {
+        position: relative;
+    }
+    
+    .banner img {
+        max-width: 100%;
+    }
+    
+    .banner div {
+        position: absolute;
+        right: 68%;
+        top: 25%;
+        left: 5%;
+    }
+    
+    #myInput {
+        position: relative;
+        left: 19%;
+        float: none;
+        text-align: center;
+        width: 8;
+        margin: 0;
+        background-color: #ffffff;
+        padding: 0px;
+        border-radius: 5px;
+        font-size: 18px;
+        border-width: 2px;
+        font-family: 'Open Sans', sans-serif;
+        border-color: #757575;
+    }
+</style>
+<!--End CSS Style-->
+
+<body>
+    <!--Start Navigation Bar-->
+    <nav class="navbar">
+        <div style="
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            color: #404950;
+          ">
+            <svg alt="Hand Health Hospital Logo" width="32" height="32" class="ms-3" viewBox="0 0 1642 1642" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linejoin: round;
+              stroke-miterlimit: 2;
+            ">
+            <g transform="matrix(1,0,0,1,-1262.5,-845.833)">
+              <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                <path
+                  d="M489.994,367.791C514.051,353.811 538.639,343.418 562.477,336.584L562.477,203L437.523,203L437.523,337.523L303,337.523L303,462.478L388.887,462.478C409.868,427.984 444.944,393.969 489.994,367.791Z"
+                  style="fill: rgb(108, 117, 125); fill-rule: nonzero"
+                />
+              </g>
+              <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                <path
+                  d="M562.477,597L549.108,597L549.252,596.951C548.706,596.974 548.166,596.982 547.622,597L535.176,597C495.782,595.682 463.936,581.623 448.373,554.842C415.895,498.955 466.59,408.894 561.599,353.685C572.041,347.616 582.584,342.244 593.122,337.523L697,337.523L697,462.478L562.477,462.478L562.477,597Z"
+                  style="fill: rgb(64, 73, 80); fill-rule: nonzero"
+                />
+              </g>
+            </g>
+          </svg> Handy Health Hospital
+        </div>
+        <div>
+            <a href="{% url 'dashboard' %}" style="
+            font-weight: 600;
+            font-size:14px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #3f474f;
+          " class="me-2 btn btn-secondary">
+          Dashboard
+        </a>
+            <a href="{% url 'logout_admin' %}" style="
+            font-weight: 600;
+            font-size:14px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #3f474f;
+          " class="me-3 btn btn-secondary">
+          Logout
+        </a>
+        </div>
+    </nav>
+    <!--Close Navigation Bar-->
+    <!--Start Content-->
+    <section>
+        <div class="banner">
+            <img src="https://bn1303files.storage.live.com/y4mDpPbKLtuKOrTqvruizwq5wxzuQebrQGUcsjuYpM7CYKeaArPbnbHjlXO-KaHWzO1YSnDJOsn6M6OhUZ7hScqNkzeekYJ9sL48MyMRLKHruSPwVrVaYJrRInIxhDxyflc58hW4PE3zkzrX6_WwUPZG3z11FiHnExccsEF_roJcn0spfvmKc-q_-i8LDLuSmty?width=4608&height=1086&cropmode=none"
+                alt="Handy Health Hospital Photo 3" />
+            <div style="
+              color: #ffff;
+              font-weight: 600;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 54px;
+            " class="ms-3">
+                Doctor
+            </div>
+        </div>
+    </section>
+    <!--End Content-->
+    <!--Start Body-->
+    <div class="mt-2" style="
+    padding-left: 20px;
+    color: #212529;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  ">
+        <img class="mb-1" src="https://bn1303files.storage.live.com/y4mCQedhFskeuH8TIAP9wExcK4lPPtZVP_hB3WGMdVKT4ZLS0W2mN-8S95RAW2lX31P1tAtwjUJGc5wchu1qCGmOK5Dg-XgVcHZT3HyWtIEi8PUn-7f6j7Oqd4dSn7t0DWDXbsO6I5go16LbYgbhCMMCiXBtWqJYMDAC856uu9oNisnadt7RSdP1RTLuklPA4EM?width=448&height=512&cropmode=none"
+            alt="" width="21" height="24" /> Doctor List
+
+
+        <span style="opacity:0;">This sentence is invisible do dont Stephen</span>
+
+
+        <input class="ms-5" type="search" id="myInput" onkeyup="tableSearch()" placeholder="Search names">
+
+
+    </div>
+    <table class="table table-striped header" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">DoctorId</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Special</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in doc %}
+            <tr>
+                <td>HHHD{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.mobile}}</td>
+                <td>{{i.special}}</td>
+                <td>
+                    <a href="{% url 'delete_doctor' i.id %}" style="font-weight: 600;
+                    font-size:14px;
+                    font-family: 'Open Sans', sans-serif;
+                    background-color: #3f474f;" onclick="return confirm('Are you sure ?')" class="btn btn-secondary">
+                    Delete
+                  </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <!--End Body-->
+    <!--Start Footer-->
+    <footer class="bg-dark">
+        <div class="ms-3 me-3 pt-1" style="
+            color: #8d98a3;
+            font-weight: 600;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+          ">
+            Page Summary
+        </div>
+        <div class="ms-3" style="
+            color: #8d98a3;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+          ">
+            This is the <b>Doctor View</b> page of HHH, you can view all the data in doctors relation and also can search for a particular doctor record and delete it.
+        </div>
+        <div>By Stephen Jose</div>
+    </footer>
+    <!--End Footer-->
+    <script type="application/javascript">
+        function tableSearch() {
+            let input, filter, table, tr, td, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            for (let i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</a>
+
+</html>
